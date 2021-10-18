@@ -97,7 +97,6 @@ public class MealItemTest extends BasicTest{
 		}
 		
 		sa.assertAll();
-		Thread.sleep(1000);
 		cartSummaryPage.ClearAll();
 		Thread.sleep(2000);
 		Assert.assertTrue(notificationSystemPage.getNotificationText().contains("All meals removed from Cart successfully"), "[ERROR]: Notification 'All meals removed from Cart successfully' was not displayed");
