@@ -77,7 +77,6 @@ public class ProfileTest extends BasicTest {
 		Thread.sleep(1000);
 		
         Assert.assertTrue(notificationSystemPage.getNotificationText().contains("Profile Image Deleted Successfully"), "[ERROR]: Notification 'Profile Image Deleted Successfully' was not displayed");
-		//Assert.assertTrue(notificationSystemPage.getNotificationText().contains("Profile Image Deleted Successfully"), "[ERROR]: Notification 'Profile Image Deleted Successfully' was not displayed");
 		
 		Thread.sleep(2000);
 		notificationSystemPage.invisibleNotification();

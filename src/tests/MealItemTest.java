@@ -65,7 +65,7 @@ public class MealItemTest extends BasicTest{
 		driver.get(this.baseURL+ "/meal/lobster-shrimp-chicken-quesadilla-combo");
 		Thread.sleep(2000);
 		mealPage.addToFavourite();
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 		Assert.assertTrue(notificationSystemPage.getNotificationText().contains("Product has been added to your favorites."), "[ERROR]: Notification 'Product has been added to your favorites.' was not displayed");
 		Thread.sleep(2000);
 		
@@ -97,6 +97,7 @@ public class MealItemTest extends BasicTest{
 		}
 		
 		sa.assertAll();
+		Thread.sleep(1000);
 		cartSummaryPage.ClearAll();
 		Thread.sleep(2000);
 		Assert.assertTrue(notificationSystemPage.getNotificationText().contains("All meals removed from Cart successfully"), "[ERROR]: Notification 'All meals removed from Cart successfully' was not displayed");
